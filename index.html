@@ -10,36 +10,76 @@
 <body>
     <header>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+            <ul class="container">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>            
         </nav>
-        <div>
+        <div class="titulo">
             <h1 class="site-title">Felipe Lima</h1>
             <h2 class="site-subtitle">jr frontend developer</h2>
         </div>        
     </header>
-    <section class="portolio">
-        <h2>Portfólio</h2>   
-        <figure>
-            <img class="img-portifolio" src="img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommercer">
-            <figcaption>eCommerce</figcaption>
+
+    <section class="sobre container" id="sobre">
+        <h2>Sobre</h2>
+
+        <figure class="avatar">
+            <img src="img/perfil.png" alt="">
         </figure>
-        <figure>
-            <img class="img-portifolio" src="img/mobile-creditos-nate-grant-unsplash.jpg" alt="eCommercer">
-            <figcaption>mobile</figcaption>
-        </figure>
-        <figure>
-            <img class="img-portifolio" src="img/webdesign-creditos-domenico-loia-unsplash.jpg">
-            <figcaption>WebDesign</figcaption>
-        </figure>
-        <figure>
-            <img class="img-portifolio" src="img/projpessoais-creditos-hal-gatewood-unsplash.jpg">
-            <figcaption>Pessoais</figcaption>
-        </figure>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat perspiciatis ad, nesciunt debitis a error autem nihil quae! Consectetur neque possimus consequuntur ea sapiente aperiam eius voluptas cumque repudiandae magnam?</p>
+        <p>Labore amet earum beatae aliquam quaerat in harum eaque recusandae quas ullam repellat nisi quibusdam doloribus, est eum, adipisci facilis ea praesentium possimus esse commodi sunt vitae. Qui, quaerat molestias?</p>
+        <p>Eius reprehenderit doloribus ex mollitia praesentium expedita cum quod? Nisi impedit totam hic nemo illum commodi! Porro modi delectus, officiis expedita veniam eos. Optio voluptates maxime totam soluta nihil est?</p>
+        <p>Itaque, tenetur facilis totam error aliquid animi earum praesentium vel atque? Tenetur, id. Eum, provident, doloremque placeat repellendus ipsa, iure ipsam nostrum officia repellat labore assumenda. Quod ducimus dolorem dolor?</p>
+
+
+    </section>
+
+    <section class="portfolio container" id="portfolio">
+        <h2>Portfólio</h2> 
+        <div class="grid">  
            
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommercer">
+                        <figcaption>eCommerce</figcaption>
+                    </figure>
+                    <div class="card-back">
+                        Oi eu sou a parte de tras
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure class="card-front">
+                    <img class="img-portfolio" src="img/mobile-creditos-nate-grant-unsplash.jpg" alt="eCommercer">
+                <figcaption>mobile</figcaption>
+                </figure>
+                <div class="card-back">
+                    Oi eu sou a parte de tras
+                </div>
+            </div>
+            
+            <figure>
+                <img class="img-portfolio" src="img/webdesign-creditos-domenico-loia-unsplash.jpg">
+                <figcaption>WebDesign</figcaption>
+            </figure>
+            <figure>
+                <img class="img-portfolio" src="img/projpessoais-creditos-hal-gatewood-unsplash.jpg">
+                <figcaption>Pessoais</figcaption>
+            </figure>
+        </div>
+    </section>
+    
+    <section class="contato container" id="contato">
+        <h2>Contato</h2>
+        <div class="grid icons">
+            <a target="blank" href="https://github.com/limaf87"><img class="cont_icons" src="./img/github.png" alt="github"></a>
+            <a target="blank" href="https://www.linkedin.com/in/felipe-lima-/"><img class="cont_icons" src="./img/linkedin.png" alt="linkedin"></a>
+            <a target="blank" href="mailto:felipelima0@gmail.com"><img class="cont_icons" src="./img/email.png" alt="email"></a>
+        </div>
     </section>
 </body>
 </html>
