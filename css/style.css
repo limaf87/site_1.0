@@ -1,11 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background: linear-gradient(#1e3799, #6a89cc);
     background-size: auto 100vh;
     font-family: Arial;   
     height: 100vh; 
+    font-size: 12px;
+}
+
+@media (min-width:400px){
+    body {
+        font-size: 14px;
+        
+    }
+}
+@media (min-width:600px){
+    body {
+        font-size: 18px;
+        
+    }
+}
+@media (min-width:1200px){
+    body {
+        font-size: 20px;
+        background-image: none;
+        background-color: black;
+        
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 .menu {
     background-color: #fff;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 .menu ul {
     display: flex;
@@ -13,6 +50,10 @@ body {
 }
 .menu li {
     list-style: none;
+}
+.menu a {
+    display: block;
+    padding: 10px 20px;
 }
 a { 
     color: teal;
@@ -26,6 +67,21 @@ a:hover {
     color: #f5f5f5;
     text-align: center;
 }
+.site-title {
+    font-size: 4em;
+    font-family: 'Gloria Hallelujah', cursive;
+}
 .site-subtitle {
     font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8em;
+    text-transform: uppercase;
+}
+.portifolio h2{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.img-portifolio {
+    width: 180px;
+    height: 180px;
 }
